@@ -5,7 +5,8 @@
 
 #show: lecture.with([Assignment 1], 0)
 #show: show-theorion
-#show link: underline
+#counter(heading).update(0)
+#set heading(numbering: "Q1.")
 
 = Lower Bounds on Approximate Carathéodory (10 points)
 
@@ -14,12 +15,15 @@ min_(x_1,dots,x_k in X) min_(alpha_i >= 0 \ sum_(i=1)^k alpha_i=1) norm(y-sum_(i
 $
 
 = Pairwise Independence (10 points)
+
 The purpose of this exercise is to demonstrate a specific sense in which pairwise independence is a much weaker condition than full independence. Concretely, given access to $n$ independent Rademacher variables, provide a deterministic recipe to construct at least $e^(c n)$ pairwise independent Rademacher variables for some $c>0$ of your choice.
 
 = Random MaxCut (10 points)
+
 Consider a random graph on $n$ vertices where each pair of vertices has an edge with probability $1 slash 2$, independently of other pairs. Every subset of vertices is associated with a cut, namely, edges with exactly one endpoint in a subset; the size of the cut is the number of such edges. Prove that with probability at least $0.999$, the maximum cut of such a graph is within $f(n) plus.minus g(n)$. Try to find the best such $f(n)$ and $g(n)$, but do not worry about the leading constant in $g(n)$.
 
 = VC Dimension Examples (10 points)
+
 Calculate the VC dimensions of:
 #enum(spacing: 1em, indent: 1em)[
   The set of halfspaces (i.e., ${bold(1)_(a^top x+b>= 0): a in RR^n, b in RR}$) in $n$ dimensions][
@@ -31,6 +35,7 @@ $
 _Hint:_ Radon's theorem can be useful for the first part.
 
 = Sparse Predictors (10 points)
+
 Consider $cal(X)=RR^n$, and for $1<=k<=n/2$, let $cal(H)_k={bold(1)_(a^top x+b>= 0): a in RR^n, b in RR, norm(a)_0<= k}$ be the class of linear predictors that depend on at most $k$ coordinates. Prove that:
 #enum(spacing: 1em, indent: 1em)[
   $"VC"(cal(H)_1)$ is at least $Omega(log n)$.][
@@ -38,6 +43,7 @@ Consider $cal(X)=RR^n$, and for $1<=k<=n/2$, let $cal(H)_k={bold(1)_(a^top x+b>=
 ]
 
 = Learning by Asking is Faster (10 points)
+
 The point of this exercise is to show that if you are allowed to ask for the correct labels for points of your choice, you can learn with far less labeling/supervision. Concretely, construct a hypothesis class $cal(H) subset.eq {0,1}^([0,1])$ such that both conditions below are satisfied simultaneously:
 #list(spacing: 1em, indent: 1em)[
   $cal(H)$ is (realizable) PAC learnable with sample complexity $Omega(log (1 slash delta) slash epsilon)$.][
