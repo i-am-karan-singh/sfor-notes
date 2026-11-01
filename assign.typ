@@ -1,10 +1,5 @@
-#import "47834.typ": lecture
-#import "@preview/theorion:0.4.1": *
-#import cosmos.clouds: *
-#set-inherited-levels(0)
-
+#import "47834.typ": *
 #show: lecture.with([Assignment 1], 0)
-#show: show-theorion
 #counter(heading).update(0)
 #set heading(numbering: "Q1.")
 

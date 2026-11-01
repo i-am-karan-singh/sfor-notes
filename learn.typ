@@ -1,10 +1,5 @@
-#import "47834.typ": lecture
-#import "@preview/theorion:0.4.1": *
-#import cosmos.clouds: *
-#set-inherited-levels(0)
-
+#import "47834.typ": *
 #show: lecture.with([Statistical Learning Theory], 2)
-#show: show-theorion
 
 Our goal in this lecture is to introduce Probably Approximately Correct (PAC) learning and build up to _the_ central result in learning theory, namely, that learnability for binary classification is exactly characterized by the VC dimension of the underlying hypothesis class. We will see a couple of applications of this result: the DKW inequality, and decision-theoretic learning of quantiles. At the end, we will also pave an alternative path to learning that relies on generalization through algorithmic stability.
 

@@ -1,3 +1,6 @@
+#import "@preview/theorion:0.4.1": *
+#import cosmos.clouds: *
+
 #let lecturetitle(title, number) = {
   align(center)[
     #box(
@@ -27,10 +30,11 @@
    	.before(label("end" + str(number)))
   )
 
+  set-inherited-levels(0)
+
   show heading: set block(above: 1.4em, below: 1em)
   show link: underline
-
-  let citet(key) = cite(key, form: "prose")
+  show: show-theorion
 
   [#metadata(none)#label("start" + str(number))]
   lecturetitle(title, number)
@@ -38,3 +42,5 @@
   doc
   [#metadata(none)#label("end" + str(number))]
 }
+
+#let citet(key) = cite(key, form: "prose")

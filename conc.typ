@@ -1,10 +1,5 @@
-#import "47834.typ": lecture
-#import "@preview/theorion:0.4.1": *
-#import cosmos.clouds: *
-#set-inherited-levels(0)
-
+#import "47834.typ": *
 #show: lecture.with([Basic Concentration Inequalities], 1)
-#show: show-theorion
 
 This course is about both negotiating uncertainty and using randomness in decision making. Most modern-day decision making systems (think, for example, ride-share) operate while dealing with multiple sources of randomness: Can we describe them well using deterministic systems? Do the particulars of uncertainties they are subject to actually matter? What are the aggregate statistical properties of such algorithms? The goal here is to provide just enough foundational knowledge so that the students can dive deeply into these data-driven optimization and algorithm design.
 
