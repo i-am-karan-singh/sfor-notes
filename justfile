@@ -1,3 +1,3 @@
 build:
-	rm *.pdf
+	-rm *.pdf
 	typst compile main.typ

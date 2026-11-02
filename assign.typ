@@ -1,5 +1,5 @@
 #import "47834.typ": *
-#show: lecture.with([Assignment 1], 0)
+#show: lecture.with([Assignment 1], 3)
 #counter(heading).update(0)
 #set heading(numbering: "Q1.")
 
